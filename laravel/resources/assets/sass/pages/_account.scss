@@ -1,0 +1,72 @@
+#account {
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+ figure {
+   width: 100%;
+   img {
+     width:100%;
+     height: auto;
+   }
+ }
+  table {
+    margin: 2rem 0;
+
+    tbody {
+      text-align: left;
+      th {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .card-wrapper {
+    height: auto;
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+
+      figure {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-right: 10px;
+        img {
+          width: 100%
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 600px) {
+    margin-top: 7rem;
+    .group {
+      h1 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 15px;
+      }
+      display: flex;
+      flex-direction: row;
+      figure {
+        max-width: 400px;
+        max-height: 400px;
+        overflow: hidden;
+      }
+      table {
+        margin-left: 15px;
+        width: initial;
+        tr {
+          border: none;
+        }
+      }
+    }
+    .groups {
+      margin-top: 2rem;
+    }
+  }
+}

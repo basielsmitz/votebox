@@ -1,0 +1,139 @@
+
+#election-detail {
+  margin-top: 7rem;
+
+  .election-image {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .candidates-title {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  hr {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .open {
+    color: $green;
+  }
+
+  .closed {
+    color: red;
+  }
+
+  .coming {
+    color: $sub;
+  }
+
+  p {
+    padding: 0.5rem 0;
+  }
+
+  table {
+    width: 100%;
+
+    thead {
+      font-weight: bold;
+      text-align: left;
+      border-bottom: 1px solid gray;
+      th {
+        padding: 0.5rem 0;
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid lightgray;
+        td {
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .group {
+      display: flex;
+      flex-direction: row;
+
+
+      .group-item {
+        width: 500px;
+        margin-right: 20px;
+
+        .election-image {
+          padding-top: 100%;
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+          }
+        }
+
+        hr {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#election-vote {
+  .candidate {
+    border: 2px solid $main;
+    margin: 0.5rem 0;
+
+    .candidate-wrapper {
+      display: flex;
+      background: white;
+      padding: 1rem;
+
+      .user-image {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 100%;
+        overflow: hidden;
+        flex: 1;
+
+        img {
+          width: 100%;
+        }
+      }
+      .candidate-info {
+        flex: 1;
+        margin-left: 1rem;
+        text-align: center;
+
+        h1 {
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        p {
+          color: $sub;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #election-detail {
+    margin-top: 5rem;
+  }
+}

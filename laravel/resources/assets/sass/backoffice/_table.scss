@@ -1,0 +1,17 @@
+.table {
+  border-color: $sub;
+  thead {
+    color: $sub;
+  }
+  tbody {
+    td {
+      a:hover {
+        text-decoration: none;
+        color: $sub;
+      }
+    }
+  }
+}
+ul.pagination {
+  margin: 0;
+}

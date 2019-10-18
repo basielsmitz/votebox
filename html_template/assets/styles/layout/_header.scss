@@ -1,0 +1,14 @@
+header {
+    background: $main;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+
+    h1 {
+        color: white;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        font-family: $Roboto;
+    }
+}

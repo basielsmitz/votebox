@@ -1,0 +1,59 @@
+#mobile-nav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: $main;
+    margin-left: 0%;
+
+    header {
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    li {
+        padding: 1rem;
+        text-align: left;
+        display: flex;
+
+        i {
+            margin-right: 0.5rem;
+        }
+
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    li:hover {
+        background: white;
+        color: black;
+    }
+}
+
+.is-open {
+    margin-left: 0% !important;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+.is-closed {
+    margin-left: -100% !important;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}

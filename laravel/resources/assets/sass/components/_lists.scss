@@ -1,0 +1,35 @@
+.paginate-links {
+  display: inline-flex;
+  float: right;
+  margin: 1rem 0;
+  justify-content: space-between;
+
+  li {
+    border: 1px solid $sub;
+    text-align: center;
+    cursor: pointer; cursor: hand;
+    display: inline-block;
+    a {
+      color: $sub;
+      padding: 0.5rem;
+      display: inline-block;
+      width: 20px;
+    }
+  }
+
+  .active {
+    background: $sub;
+    a {
+      color: white;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+
+    li {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+
+    main {
+        padding: 1rem;
+
+        #logo {
+            width: 50%;
+            margin: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    a {
+        color: black;
+    }
+}

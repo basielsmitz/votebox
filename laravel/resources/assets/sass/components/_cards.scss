@@ -1,0 +1,169 @@
+#cards {
+  margin-top: 2rem;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+.card-field {
+  display: flex;
+  flex-direction: column;
+
+  .card-with-header {
+    width: 100%;
+
+    header {
+      background: white;
+      display: flex;
+      flex-direction: row;
+
+      padding: 0;
+
+      .tab {
+        padding: 1rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .active {
+        background: lighten($green, 20%);
+        border-radius: 5px 5px 0 0;
+        border: 2px solid $green;
+        border-bottom: 0px;
+      }
+    }
+
+    .card {
+      padding: 0.5rem;
+      border: 1px solid gray;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: 1.2;
+
+      div {
+        width: calc(100% / 3);
+      }
+
+      a {
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+      }
+
+      .card-element {
+        width: 100%;
+        padding: 0.5rem;
+        text-align: left;
+        margin: 0 2px;
+        font-size: 0.8rem;
+
+        figure {
+          width: 100%;
+          padding-top: 100%;
+          position: relative;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .standard-card {
+    margin-top: 1rem;
+
+    .card-wrapper {
+      box-shadow: 0px 2px 5px #888888;
+      padding: 1rem;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+
+        figure {
+          width: 100%;
+          position: relative;
+          padding-top: 100%;
+          overflow: hidden;
+
+          img {
+            background: $main;
+            width: 100%;
+            position: absolute;
+            top: 0;
+          }
+        }
+
+        .card-info {
+          padding: 0.5rem 0;
+          line-height: 1.2;
+
+          h1 {
+            font-weight: bold;
+          }
+
+          p {
+            color: gray;
+          }
+
+          ul {
+            margin-top: 1rem;
+
+            li {
+              list-style: initial;
+              margin-left: 1rem;
+              font-weight: bold;
+            }
+          }
+
+          .open {
+            color: $green;
+          }
+
+          .closed {
+            color: red
+          }
+        }
+
+        .button-field {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .standard-card {
+      width: calc(100% /2 - 20px);
+      flex-wrap: wrap;
+
+      .card-wrapper {
+        height: 600px;
+        display:flex;
+        flex-direction: column;
+
+        .button-field {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .standard-card {
+      width: calc(100% /3 - 20px);
+    }
+  }
+}

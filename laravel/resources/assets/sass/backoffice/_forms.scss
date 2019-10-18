@@ -1,0 +1,25 @@
+.list-inline{
+  a {
+    color: #d9534f;
+  }
+  form {
+    label {
+      color: $sub;
+    }
+    input[type=text], select {
+      border: solid 0.5px $sub;
+      border-radius: 5px;
+      min-height: 33px;
+
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    input:focus {
+      border-radius: 5px;
+    }
+
+    input[type=submit]{
+      margin-top: -3px;
+    }
+  }
+}

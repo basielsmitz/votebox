@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+
+    a {
+        color: black;
+    }
+
+    .icon {
+        max-width: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

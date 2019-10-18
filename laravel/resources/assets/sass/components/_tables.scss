@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+  margin-top: 15px;
+  thead {
+    border-bottom: 2px solid black;
+    th {
+      text-align: left;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid gray;
+      td {
+        padding: 0.5rem;
+        a {
+          text-decoration:none;
+        }
+      }
+    }
+  }
+}

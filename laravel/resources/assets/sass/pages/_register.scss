@@ -1,0 +1,25 @@
+nav {
+  display: none;
+}
+#register {
+  margin: 0 auto;
+  width: 380px;
+  figure {
+    width: 300px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 600px) {
+    width: 520px;
+    figure {
+      width: 400px;
+      margin: 0 auto;
+    }
+    .button-field {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    width: 768px;
+  }
+}

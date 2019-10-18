@@ -1,0 +1,34 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+
+  .searchfield {
+    border: none;
+    border-bottom: 2px solid $main;
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+    display: flex;
+
+    .search {
+      color: $green;
+    }
+
+    input[type="text"] {
+      border: none;
+       flex: 1;
+      margin-left: 1rem;
+      outline: none;
+    }
+  }
+  .checkboxes {
+    margin-top: 1rem;
+
+    input[type="checkbox"] {
+      background: $main;
+    }
+  }
+}

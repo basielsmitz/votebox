@@ -1,0 +1,47 @@
+#formfield {
+    margin-top: 1rem;
+
+}
+
+.form-field {
+
+    form {
+        padding: 1rem;
+        box-shadow: 0px 2px 5px #888888;
+
+        .form-item {
+            display:flex;
+            flex-direction: column;
+            margin: 1rem 0 1rem 0;
+
+            label {
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+
+            input, select {
+                padding: 0.5rem;
+                border-radius: 2px;
+                border: 1px solid gray;
+                color: gray;
+            }
+
+            select {
+                padding: 0.45rem;
+            }
+        }
+
+        .errors {
+            margin-top: 15px;
+            color: red;
+
+            i {
+                margin-right: 5px;
+            }
+
+            error {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

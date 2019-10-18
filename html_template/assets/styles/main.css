@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif; }
+  body main {
+    padding: 1rem; }
+    body main #logo {
+      width: 50%;
+      margin: auto; }
+      body main #logo img {
+        width: 100%; }
+  body a {
+    color: black; }
+
+/**************************************
+               Colors
+**************************************/
+/**************************************
+               Colors
+**************************************/
+.button-field {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  font-family: "Roboto"; }
+  .button-field .btn {
+    border-radius: 5px;
+    border: none;
+    flex-grow: 1;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    font-weight: bold; }
+  .button-field .btn:first-child {
+    margin-left: 0; }
+  .button-field .green {
+    color: white;
+    background: #9BC53D;
+    border-bottom: 2px solid #5e7824; }
+  .button-field .blue {
+    color: white;
+    background: #347C90;
+    border-bottom: 2px solid #193b45; }
+  .button-field .white {
+    color: #347C90;
+    background: white;
+    border: 1px solid #347C90; }
+
+#cards {
+  margin-top: 2rem; }
+  #cards h1 {
+    margin-bottom: 1rem; }
+
+.card-field .card-with-header header {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding: 0; }
+  .card-field .card-with-header header .tab {
+    padding: 1rem; }
+  .card-field .card-with-header header .active {
+    background: #c3dc8c;
+    border-radius: 5px 5px 0 0;
+    border: 2px solid #9BC53D;
+    border-bottom: 0px; }
+.card-field .card-with-header .card {
+  padding: 1rem;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 1.2; }
+  .card-field .card-with-header .card a {
+    text-decoration: none; }
+  .card-field .card-with-header .card .card-element {
+    padding: 0.5rem;
+    text-align: left;
+    margin: 0 2px;
+    font-size: 0.8rem; }
+    .card-field .card-with-header .card .card-element img {
+      width: 100%; }
+.card-field .standard-card {
+  margin-top: 1rem; }
+  .card-field .standard-card .card-wrapper {
+    box-shadow: 0px 2px 5px #888888;
+    padding: 1rem; }
+    .card-field .standard-card .card-wrapper .card {
+      display: flex;
+      flex-direction: column; }
+      .card-field .standard-card .card-wrapper .card img {
+        background: lightblue;
+        height: 200px; }
+      .card-field .standard-card .card-wrapper .card .card-info {
+        padding: 0.5rem 0;
+        line-height: 1.2; }
+        .card-field .standard-card .card-wrapper .card .card-info h1 {
+          font-weight: bold; }
+        .card-field .standard-card .card-wrapper .card .card-info p {
+          color: gray; }
+        .card-field .standard-card .card-wrapper .card .card-info ul {
+          margin-top: 1rem; }
+          .card-field .standard-card .card-wrapper .card .card-info ul li {
+            list-style: initial;
+            margin-left: 1rem;
+            font-weight: bold; }
+        .card-field .standard-card .card-wrapper .card .card-info .open {
+          color: #9BC53D; }
+        .card-field .standard-card .card-wrapper .card .card-info .closed {
+          color: red; }
+      .card-field .standard-card .card-wrapper .card .button-field {
+        display: block; }
+
+#formfield {
+  margin-top: 1rem; }
+
+.form-field form {
+  padding: 1rem;
+  box-shadow: 0px 2px 5px #888888; }
+  .form-field form .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 1rem 0; }
+    .form-field form .form-item label {
+      margin-bottom: 0.5rem;
+      font-weight: bold; }
+    .form-field form .form-item input {
+      padding: 0.5rem;
+      border-radius: 2px;
+      border: 1px solid gray;
+      color: gray; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex; }
+
+header {
+  background: #D7DD35;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center; }
+  header h1 {
+    color: white;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-family: "Roboto"; }
+
+#mobile-nav {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #D7DD35;
+  margin-left: 0%; }
+  #mobile-nav header {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #mobile-nav header img {
+      width: 200px; }
+  #mobile-nav li {
+    padding: 1rem;
+    text-align: left;
+    display: flex; }
+    #mobile-nav li i {
+      margin-right: 0.5rem; }
+    #mobile-nav li a {
+      width: 100%;
+      text-decoration: none;
+      color: white; }
+  #mobile-nav li:hover {
+    background: white;
+    color: black; }
+
+.is-open {
+  margin-left: 0% !important;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+
+.is-closed {
+  margin-left: -100% !important;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+
+/*# sourceMappingURL=main.css.map */

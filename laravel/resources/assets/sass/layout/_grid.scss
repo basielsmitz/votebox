@@ -1,0 +1,24 @@
+.container {
+    max-width: 1366px;
+    padding: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.container-item {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 5rem auto;
+    }
+}

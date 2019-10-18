@@ -1,0 +1,46 @@
+.navbar-inverse {
+    background-color: white;
+    color: black;
+
+      .navbar-header {
+
+          .navbar-brand{
+            padding: 0;
+
+              img {
+                padding-left: 2rem;
+                height: 100%;
+
+            }
+        }
+  }
+  .top-nav li a {
+    color: black;
+  }
+  .top-nav li a:hover {
+    color: white;
+    background-color: $main;
+  }
+  .side-nav {
+    background-color: white;
+    border-right: solid black 1px;
+      li a {
+        color: black;
+        font-size: 1rem;
+        padding: 1rem;
+        padding-left:2rem;
+        i {
+          padding-right: 1.5rem;
+          color: black;
+        }
+      }
+      li:hover  {
+        background-color: $main !important;
+        a {
+          color: white;
+        }
+      }
+  }
+}
+
+

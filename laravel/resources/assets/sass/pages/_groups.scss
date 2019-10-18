@@ -1,0 +1,104 @@
+#groups {
+  margin-top: 7rem;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 768px) {
+    .card-wrapper {
+      height: auto;
+
+      .card {
+        h1 {
+          font-size: 16px;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+#group-detail {
+margin-top: 5rem;
+
+  .card-wrapper {
+    height:auto;
+  }
+
+  .group {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .group-item {
+
+      figure {
+        max-width: 768px;
+        max-height: 400px;
+        overflow:hidden;
+        margin-right: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      h1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+
+    .button-field {
+      bottom: 0;
+      button {
+        padding: 0.5rem;
+      }
+
+
+    }
+
+  }
+  h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 7rem;
+    .group {
+      display:flex;
+      flex-direction: row;
+
+      .group-item {
+        position: relative;
+
+        figure {
+          max-width: 500px;
+          max-height: 400px;
+          overflow:hidden;
+          margin-right: 20px;
+          img {
+            width: 100%;
+          }
+        }
+        h1{
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+      }
+
+      .button-field {
+        position: absolute;
+        bottom: 0;
+        button {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}

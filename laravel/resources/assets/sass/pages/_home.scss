@@ -1,0 +1,25 @@
+#home {
+  #logo {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .referendum-title {
+    font-weight: bold;
+    font-size: 20px;
+    height: 80px;
+    border-bottom: 2px solid $sub;
+  }
+
+  .election-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+}

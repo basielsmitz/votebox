@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML template Votebox</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/styles/main.css">
+    </head>
+    <body>
+        <nav id="mobile-nav" class="is-closed">
+            <header>
+                <img src="assets/images/logo.svg">
+                <i class="fa fa-times fa-2x" aria-hidden="true" id="cross"></i>
+            </header>
+            <ul>
+                <li>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <a href="#">Verkiezingen</a>
+                </li>
+                <li>
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    <a href="#">
+                        Referenda
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="#">
+                        Mijn Profiel
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <a href="#">
+                        Instellingen
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                    <a href="#">
+                        Inloggen
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <figure>
+                <a href="#" id="hamburger">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </a>
+            </figure>
+            <h1>Votebox</h1>
+        </header>
+        <main>
+            <figure id="logo">
+                <img src="assets/images/logo-square.svg">
+            </figure>
+            <div id="buttons">
+            <h1>Buttons</h1>
+                <div class="button-field">
+                    <button class="btn green">Agree</button>
+                    <button class="btn blue">Agree</button>
+                    <button class="btn white">Agree</button>
+                </div>
+            </div>
+            <div id="cards">
+                <h1>Cards</h1>
+                <div class="card-field">
+                    <div class="card-with-header">
+                        <header>
+                            <div class="tab active">Verkiezingen</div>
+                            <div class="tab">Referenda</div>
+                        </header>
+                        <div class="card">
+                            <a href="">
+                                <div class="card-element">
+                                    <img src="assets/images/logo-square.svg">
+                                    <p>Federale verkiezingen 2018</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="card-element">
+                                    <img src="assets/images/logo-square.svg">
+                                    <p>Federale verkiezingen 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="standard-card">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img src="assets/images/logo-square.svg">
+                                <div class="card-info">
+                                    <h1 class="title">Federale verkiezingen</h1>
+                                    <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en
+                                        zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw.
+                                    </p>
+                                    <ul>
+                                        <li class="open">Status: Lopend</li>
+                                        <li class="closed">Status: Gesloten</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="button-field">
+                                    <button class="btn blue">Stemmen</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="formfield">
+                <h1>Form</h1>
+                <div class="form-field">
+                    <form>
+                        <div class="form-item">
+                            <label>Gebruikersnaam</label>
+                            <input type="text" />
+                        </div>
+                        <div class="form-item">
+                            <label>Wachtwoord</label>
+                            <input type="password" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>

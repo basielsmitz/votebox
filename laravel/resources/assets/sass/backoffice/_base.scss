@@ -1,0 +1,38 @@
+
+body {
+  background-color: white;
+}
+h1 {
+  font-size: 36px;
+  color: $sub;
+}
+h4 {
+   font-size: 20px;
+   font-weight: bold;
+   padding-bottom: 1rem;
+   color:$sub;
+ }
+h3 {
+   font-size: 25px;
+   padding-bottom: 1rem;
+   color:$sub;
+ }
+.breadcrumb {
+  background-color: rgba(246, 255, 2, 0.2);
+  a {
+    color:$sub;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+#page-wrapper {
+  padding: 10px;
+  margin-top: 100px;
+}
+@media (min-width: 768px){
+  #page-wrapper {
+    padding: 10px;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,66 @@
+#parties {
+  .card-wrapper {
+    height: auto;
+  }
+
+  .card {
+    h1 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+}
+#party {
+  .info {
+    figure {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+  h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 7rem;
+    .info {
+      display: flex;
+      flex-direction: row;
+
+      .group {
+        margin-left: 20px;
+        width: 100%;
+      }
+      figure {
+        position: relative;
+        max-width: 500px;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top:0;
+        }
+      }
+    }
+    h2 {
+      margin-top: 30px;
+    }
+  }
+}
