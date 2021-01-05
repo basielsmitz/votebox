@@ -11,7 +11,7 @@
     "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "bootstrap-sass": "^3.3.7",
     "cross-env": "^3.2.3",
     "jquery": "^3.1.1",
@@ -20,7 +20,7 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "lodash": "^4.17.4",
     "vee-validate": "^2.0.0-rc.3",
     "vue-axios": "^2.0.2",
